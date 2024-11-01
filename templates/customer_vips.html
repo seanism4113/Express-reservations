@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block title %}Customers{% endblock %} {% block content %}
+
+<h1>VIP Customers</h1>
+
+<ol style="column-count: 1">
+	{% for vip in vips %}
+	<li><a href="/customers/{{ vip.id }}/">{{ vip.fullName }} </a> <br />Reservations: {{ vip.reservationCount }}</li>
+	{% endfor %}
+</ol>
+
+{% endblock %}

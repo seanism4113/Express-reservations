@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block title %}Error{% endblock %} {% block content %}
+
+<h1>Error {{ error.status }}</h1>
+
+<p>{{ error.message }}</p>
+
+<p>We're sorry, but something went wrong.</p>
+<p>Please try again later or go back to the <a href="/">homepage</a>.</p>
+
+{% endblock %}
